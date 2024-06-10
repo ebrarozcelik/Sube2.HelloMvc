@@ -1,0 +1,15 @@
+﻿@model Ders
+@{
+    ViewData["Title"] = "AddCourse";
+}
+
+<h1>Ders Ekleme İşlemi</h1>
+
+
+<form asp-action="AddCourse" asp-controller="Course" method="post">
+    <label>Ders Adı:</label>
+    <input asp-for="Dersad" />
+    <label>Kredi:</label>
+    <input asp-for="Kredi" />
+    <input type="submit" value="Kaydet" />
+</form>
